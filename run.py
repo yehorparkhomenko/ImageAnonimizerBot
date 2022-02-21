@@ -26,8 +26,7 @@ async def document_handler(message: Message):
     file_path = utils.gen_filepath('static/', file_ext)
     await message.document.download(file_path)
 
-    image_file = open(file_path)
-    image = Image.open(image_file)
+    image = Image.open(file_path)
 
     # next 3 lines strip exif
     image_data = list(image.getdata())
