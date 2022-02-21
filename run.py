@@ -42,3 +42,5 @@ async def document_handler(message: Message):
 
     os.remove(file_path)
 
+
+executor.start_polling(dispatcher)
