@@ -6,7 +6,7 @@ from PIL import Image
 
 import utils
 
-TOKEN = ''
+TOKEN = os.environ['TOKEN']
 bot = Bot(token=TOKEN)
 dispatcher = Dispatcher(bot)
 
